@@ -1,10 +1,14 @@
-    #pedir al usuario 2 valores lo tienen que invertir que el valor A tome el valor B  y el B tome el valor de A
+contra = "UCA2025"
+entrada = ""
+intentos = 0 
 
-A = input("Ingrese el valor de A: ")
-B = input("Ingrese el valor de B: ")
+while entrada != contra and intentos < 3:
+    entrada = input("ingrese su contrasenia: ")
+    if entrada != contra:
+        print("la contrasenia es incorrecta ")
+        intentos+1
 
-A, B = B, A
-
-print("Después del intercambio:")
-print("A =", A)
-print("B =", B)
+if entrada == contra:
+    print("has accedido")
+else:
+    print("no hay mas intentos ")
